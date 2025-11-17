@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainMenuController">
+   <children>
+      <GridPane alignment="CENTER" minHeight="480.0" minWidth="640.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="0.0" prefHeight="0.0" valignment="TOP" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="0.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#showProductsMenu" prefHeight="25.0" prefWidth="131.0" text="Товары" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#showCustomersMenu" prefHeight="25.0" prefWidth="131.0" text="Покупатели" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
