@@ -11,6 +11,8 @@ import java.io.IOException;
 public class OnlineStoreApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        DataInitializer.init();
+
         FXMLLoader fxmlLoader = new FXMLLoader(OnlineStoreApplication.class.getResource("loginmenu.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 640, 480);
 

@@ -31,7 +31,3 @@ main/
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── application/&nbsp;&nbsp;&nbsp;&nbsp;FXML интерфейс   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── data/          
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── META-INF/
-
-# Требования для запуска через .jar
-JDK 17+, JavaFX SDK  
-Заменить пути к файлам в GeneralProductsController и GeneralCustomersController

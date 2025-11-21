@@ -1,5 +1,6 @@
 package application.controllers.customersControllers;
 
+import application.AppData;
 import application.controllers.GeneralController;
 import javafx.event.ActionEvent;
 import onlinestore.InputCheck;
@@ -12,7 +13,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class GeneralCustomersController extends GeneralController {
-    protected final Path path = Path.of("app/customers.txt");
+    protected final Path path = AppData.getCustomersFile();
     protected final ArrayList<String> file = new ArrayList<>();
 
     protected static int editIndex = -1;

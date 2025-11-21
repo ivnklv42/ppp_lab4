@@ -1,5 +1,6 @@
 package application.controllers.productsControllers;
 
+import application.AppData;
 import application.controllers.GeneralController;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
@@ -15,7 +16,7 @@ import java.util.List;
 
 
 public class GeneralProductsController extends GeneralController {
-    protected static final Path path = Path.of("app/products.txt");
+    protected static final Path path = AppData.getProductsFile();
 
     protected String newTitle;
     protected String newPrice;

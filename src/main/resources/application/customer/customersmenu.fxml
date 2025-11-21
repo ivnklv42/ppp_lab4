@@ -56,6 +56,11 @@
                         <Font name="Serif Regular" size="14.0" />
                     </font>
                 </Button>
+            <Label fx:id="wrongFileLabel" text="Не удалось прочитать файл или данные в нём не соответствуют формату" textFill="RED" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
+            </Label>
             </children>
         </GridPane>
     </children>
