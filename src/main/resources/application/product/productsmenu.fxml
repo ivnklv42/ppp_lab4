@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.productsControllers.ProductsMenuController">
+    <children>
+        <GridPane alignment="CENTER" minHeight="480.0" minWidth="640.0" VBox.vgrow="ALWAYS">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="0.0" prefHeight="0.0" valignment="TOP" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button mnemonicParsing="false" onAction="#addProduct" prefHeight="25.0" prefWidth="190.0" text="Добавить новый товар" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font></Button>
+                <Button mnemonicParsing="false" onAction="#editProduct" prefHeight="25.0" prefWidth="190.0" text="Редактировать товар" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font></Button>
+                <Button mnemonicParsing="false" onAction="#showAllProducts" prefHeight="25.0" prefWidth="190.0" text="Отобразить все товары" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font></Button>
+                <Button mnemonicParsing="false" onAction="#toMainMenu" text="Назад" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" />
+                    </GridPane.margin>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#deleteProduct" prefHeight="25.0" prefWidth="190.0" text="Удалить товар" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#replaceProducts" prefHeight="25.0" prefWidth="190.0" text="Заменить данные из файла" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#updateProducts" prefHeight="25.0" prefWidth="190.0" text="Обновить данные из файла" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="wrongFileLabel" text="Не удалось прочитать файл или данные в нём не соответствуют формату" textFill="RED" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Serif Regular" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </GridPane>
+    </children>
+</VBox>

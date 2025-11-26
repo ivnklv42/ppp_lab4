@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.productsControllers.NewProductController">
+   <StackPane prefWidth="640.0" VBox.vgrow="SOMETIMES">
+      <children>
+          <GridPane fx:id="choiceGridPane" alignment="CENTER" visible="false" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="0.0" prefHeight="0.0" valignment="TOP" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="0.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+              <children>
+                  <Button mnemonicParsing="false" onAction="#onTypeButtonPressed" prefHeight="25.0" prefWidth="131.0" text="Электроника" GridPane.rowIndex="1">
+                      <font>
+                          <Font name="Serif Regular" size="14.0" />
+                      </font></Button>
+                  <Button mnemonicParsing="false" onAction="#onTypeButtonPressed" prefHeight="25.0" prefWidth="131.0" text="Одежда" GridPane.rowIndex="2">
+                      <font>
+                          <Font name="Serif Regular" size="14.0" />
+                      </font></Button>
+                  <Button mnemonicParsing="false" onAction="#onTypeButtonPressed" prefHeight="25.0" prefWidth="131.0" text="Обувь" GridPane.rowIndex="3">
+                      <font>
+                          <Font name="Serif Regular" size="14.0" />
+                      </font></Button>
+               <Label text="Выберите тип товара">
+                  <font>
+                     <Font name="Serif Regular" size="14.0" />
+                  </font>
+                  <GridPane.margin>
+                     <Insets top="10.0" />
+                  </GridPane.margin>
+               </Label>
+               <Button mnemonicParsing="false" onAction="#onTypeButtonPressed" prefHeight="25.0" prefWidth="131.0" text="Книги" GridPane.rowIndex="4">
+                  <font>
+                     <Font name="Serif Regular" size="14.0" />
+                  </font></Button>
+               <Button mnemonicParsing="false" onAction="#onTypeButtonPressed" prefHeight="25.0" prefWidth="131.0" text="Красота" GridPane.rowIndex="5">
+                  <font>
+                     <Font name="Serif Regular" size="14.0" />
+                  </font></Button>
+              </children>
+          </GridPane>
+         <GridPane fx:id="gridPane">
+           <columnConstraints>
+             <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+
+                <Label text="Название:" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                </Label>
+
+                <TextField fx:id="titleField" prefHeight="26.0" prefWidth="411.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                </TextField>
+
+                <Label text="Цена:" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                </Label>
+               <TextField fx:id="priceField" prefHeight="26.0" prefWidth="411.0" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                  <font>
+                     <Font name="Serif Regular" size="14.0" />
+                  </font></TextField>
+
+                <Label fx:id="wrongData" alignment="CENTER" contentDisplay="CENTER" text="Неверно введено название и/или цена" textFill="RED" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                </Label>
+
+                <Button mnemonicParsing="false" onAction="#continuee" text="Продолжить" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#toPreviousMenu" text="Назад" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                    <font>
+                        <Font name="Serif Regular" size="14.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" />
+                    </GridPane.margin>
+                </Button>
+            </children>
+         </GridPane>
+      </children></StackPane>
+
+</VBox>

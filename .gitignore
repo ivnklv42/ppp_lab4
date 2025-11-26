@@ -1,0 +1,50 @@
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Кэш сборки IntelliJ
+out/
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Wrapper лог
+.mvn/wrapper/maven-wrapper.jar
+
+### Java ###
+*.class
+*.log
+*.ctxt
+
+# Папки, создаваемые JVM
+hs_err_pid*
+replay_pid*
+
+### JavaFX ###
+# Никаких специфичных артефактов JavaFX, кроме как тех, что генерируются в target/
+# Добавим игнор для jlink/jpackage выходных директорий, если они используются:
+app/
+jpackage/
+
+### ОС-специфичные файлы ###
+# macOS
+.DS_Store
+.idea/workspace.xml
+.idea/tasks.xml
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
