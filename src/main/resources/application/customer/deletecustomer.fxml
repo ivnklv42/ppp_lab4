@@ -36,7 +36,7 @@
                     </font>
                 </TextField>
 
-                <Label fx:id="customerNotFoundLabel" alignment="CENTER" contentDisplay="CENTER" text="Пользователь не найден" textFill="RED" visible="false" GridPane.rowIndex="4">
+                <Label fx:id="customerNotFoundLabel" alignment="CENTER" contentDisplay="CENTER" text="Покупатель не найден" textFill="RED" visible="false" GridPane.rowIndex="4">
                     <font>
                         <Font name="Serif Regular" size="14.0" />
                     </font>
